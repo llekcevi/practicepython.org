@@ -27,30 +27,30 @@ while again:
     #comparing strings the players have entered
     if player_1 == player_2:
         print("It's a draw.")
+    else:
+        while player_1 == "rock":           
+            if player_2 == "paper":
+                print(f"{player_name_2} wins!")
+                break
+            elif player_2 == "scissors":
+                print(f"{player_name_1} wins!")
+                break
 
-    while player_1 == "rock":           
-        if player_2 == "paper":
-            print(f"{player_name_2} wins!")
-            break 
-        elif player_2 == "scissors":
-            print(f"{player_name_1} wins!")
-            break
+        while player_1 == "paper":
+            if player_2 == "scissors":
+                print(f"{player_name_2} wins!")
+                break
+            elif player_2 == "rock":
+                print(f"{player_name_1} wins!")
+                break
 
-    while player_1 == "paper":
-        if player_2 == "scissors":
-            print(f"{player_name_2} wins!")
-            break
-        elif player_2 == "rock":
-            print(f"{player_name_1} wins!")
-            break
-
-    while player_1 == "scissors":
-        if player_2 == "rock":
-            print(f"{player_name_2} wins!")
-            break
-        elif player_2 == "paper":
-            print(f"{player_name_1} wins!")
-            break
+        while player_1 == "scissors":
+            if player_2 == "rock":
+                print(f"{player_name_2} wins!")
+                break
+            elif player_2 == "paper":
+                print(f"{player_name_1} wins!")
+                break
     repeat = input("Do you want to play again? (Type yes or no.) \n")
     if repeat == "no":
         again = False
