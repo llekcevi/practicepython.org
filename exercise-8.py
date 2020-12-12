@@ -31,7 +31,7 @@ while again:
     while player_1 == "rock":           
         if player_2 == "paper":
             print(f"{player_name_2} wins!")
-            break
+            break 
         elif player_2 == "scissors":
             print(f"{player_name_1} wins!")
             break
